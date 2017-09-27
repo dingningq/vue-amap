@@ -146,6 +146,7 @@ export default {
             return poi;
           });
           this._onSearchResult(LngLats);
+	        this.keyword='';
         } else if (result.poiList === undefined) {
           throw new Error(result);
         }
